@@ -1,0 +1,24 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-text,
+.nav-link {
+    font-weight: 500;
+    font-size: 14.5px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+}
+
+.navbar-brand-text {
+    color: white;
+}
+
+.footer {
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+.footer-attribution {
+    font-size: 14px;
+}
