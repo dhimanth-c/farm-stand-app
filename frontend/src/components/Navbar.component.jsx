@@ -1,5 +1,5 @@
 import { useState } from "react";
-import navbarLogo from "./../images/farmer2.png";
+import navbarLogo from "./../images/farmer.png";
 
 export default function Navbar() {
   const [formData, setFormData] = useState("");
