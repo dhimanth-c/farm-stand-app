@@ -8,17 +8,17 @@ export default function Stands() {
   useEffect(() => {
     axios
       .get("http://localhost:4000/stands/all")
-      .then((res) => setAllStands(res.data))
-      .catch((error) => console.log(error));
+      .then((res) => {
+        setAllStands(res.data);
+      })
+      .catch((error) => {
+        window.location = "/error";
+      });
   }, []);
 
   const standsElement = allStands.map((stand) => {
     return <Stand key={stand.id} stand={stand} />;
   });
 
-  return (
-    <main className="container d-flex flex-column justify-content-center align-items-center mt-3">
-      {standsElement}
-    </main>
-  );
+  return <>{standsElement}</>;
 }

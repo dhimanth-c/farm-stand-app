@@ -18,7 +18,7 @@ export default function Navbar() {
       className="navbar navbar-expand-md navbar-dark sticky-top"
     >
       <div className="container-fluid">
-        <a className="navbar-brand px-3 mx-0" href="#">
+        <a className="navbar-brand px-3 mx-0" href="/">
           <div className="d-flex align-items-center">
             <img
               alt="..."
@@ -42,10 +42,28 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarToggler">
           <ul className="navbar-nav me-auto">
-            <li className="nav-item">
-              <a className="nav-link px-3 active" href="#">
+            <li className="nav-item dropdown px-3">
+              <a
+                href="#"
+                role="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                className="nav-link dropdown-toggle px-0"
+              >
                 Stands
               </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="/stands/all">
+                    View All
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/stands/new">
+                    Create Stand
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
               <a className="nav-link px-3" href="#">

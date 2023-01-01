@@ -12,7 +12,12 @@ export default function Stand(props) {
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h5 className="card-title">{props.stand.name}</h5>
+            <a
+              href={`/stands/${props.stand.id}`}
+              className="text-reset text-underline-hover"
+            >
+              <h5 className="card-title">{props.stand.name}</h5>
+            </a>
             <p className="card-text">{props.stand.description}</p>
             <p className="card-text">{props.stand.location}</p>
           </div>
